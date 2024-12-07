@@ -1,52 +1,49 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
+import SongList from "./components/SongList";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="grid items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+      <main className="container mx-auto px-4 py-8">
+        <div className="flex flex-col items-center mb-8">
+          <Image
+            src="https://i.ibb.co/CPh6Ty6/Screenshot-2024-12-06-at-10-39-37-PM.png"
+            alt="AZ"
+            width={300}
+            height={300}
+            className="mb-4"
+          />
+          <h1 className="text-2xl font-bold mb-2">
+            Current Status - First Post, Dec 6th
+          </h1>
+          <p className="text-center max-w-2xl">
+            It's AZ, the 23 is silent. I'm from Chicago & I'm a software
+            engineer who's lived kind a crazy life and love to rap about my
+            experiences & emotions. I believe the world needs more creative
+            vulnerability.
+            <br />
+            <br />
+            I'm not where I want to be yet, but my mind is determined to make it
+            massive. Right now, I'm starting from scratch, recording little raps
+            on my iPhone. But I'm about to begin collab'ing with music producers
+            to transform these concepts into real songs.
+            <br />
+            <br />
+            I'm looking for 100 strangers to take a leap & believe in me before
+            the world does. If that's you, add your name to the list below so I
+            can remember you forever.
+          </p>
+        </div>
+        <div className="flex flex-col md:flex-row gap-8">
+          <div className="w-full md:w-1/2">
+            <SongList />
+          </div>
+          {/* <div className="w-full md:w-1/2">
+            <Suspense fallback={<div>Loading supporters...</div>}>
+              <SupporterList />
+            </Suspense>
+          </div> */}
         </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
