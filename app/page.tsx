@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import SongList from "./components/SongList";
+import { Suspense } from 'react'
+import SupporterList from "./components/SupporterList";
 
 export default function Home() {
   return (
@@ -8,14 +10,15 @@ export default function Home() {
       <main className="container mx-auto px-4 py-8">
         <div className="flex flex-col items-center mb-8">
           <Image
+            
             src="https://i.ibb.co/CPh6Ty6/Screenshot-2024-12-06-at-10-39-37-PM.png"
             alt="AZ"
             width={300}
             height={300}
-            className="mb-4"
+            className="mb-4 text-center"
           />
           <h1 className="text-2xl font-bold mb-2">
-            Current Status - First Post, Dec 6th
+            First Post, Dec 6th
           </h1>
           <p className="text-center max-w-2xl">
             It's AZ, the 23 is silent. I'm from Chicago & I'm a software
@@ -39,11 +42,11 @@ export default function Home() {
           <div className="w-full md:w-1/2">
             <SongList />
           </div>
-          {/* <div className="w-full md:w-1/2">
+          <div className="w-full md:w-1/2">
             <Suspense fallback={<div>Loading supporters...</div>}>
               <SupporterList />
             </Suspense>
-          </div> */}
+          </div>
         </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">

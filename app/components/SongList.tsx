@@ -4,9 +4,8 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 
 const SONGS = [
-  { id: 1, title: 'Chasing Dreams', url: '/song1.mp3' },
-  { id: 2, title: 'City Lights', url: '/song2.mp3' },
-  { id: 3, title: 'Midnight Thoughts', url: '/song3.mp3' },
+  { id: 1, title: 'forever, love', url: 'https://dl.sndup.net/xz39n/forever,%20love%20-%20birthday%20rap.m4a' },
+  { id: 2, title: 'niklegah inshAllah', url: 'https://dl.sndup.net/p2s7c/Niklegah%20iA%20(recorded%20inna%20whip).m4a' },
 ]
 
 export default function SongList() {
