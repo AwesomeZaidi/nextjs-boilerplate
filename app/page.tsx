@@ -11,7 +11,7 @@ export default function Home() {
         <div className="flex flex-col items-center mb-8">
           <Image
             
-            src="https://i.ibb.co/CPh6Ty6/Screenshot-2024-12-06-at-10-39-37-PM.png"
+            src="https://i.ibb.co/bR5PzP4S/Screenshot-2025-02-28-at-6-59-39-PM.png"
             alt="AZ"
             width={300}
             height={300}
@@ -33,7 +33,7 @@ export default function Home() {
             to transform these concepts into real songs.
             <br />
             <br />
-            I'm looking for 100 strangers to take a leap & believe in me before
+            I'm looking for 1,000 strangers to take a leap & believe in me before
             the world does. If that's you, add your name to the list below so I
             can remember you forever.
           </p>
